@@ -1,0 +1,230 @@
+
+
+Mon Apr 16 01:15:48 2012
+
+
+						 WORKING MACHINE SPECIFICATIONS
+						________________________________
+
+					       (all temperatures in degree celsius)
+
+Machine No.	Initial Temperature	1lt incr temp by	Max temp under which Machine works	Temp Decrs'd in Cooling Machine
+
+    1			450			20				500					20
+    2			30 			10				55 					10
+    3			500			30				575					30
+    4			25 			5 				39 					5 
+    5			25 			5 				39 					5 
+ Note: Assumptions made : 
+ ________________________
+
+1. The Initial & Favourable specifications of machines are pre-defined AS ABOVE . 
+
+2. According to the code made by us , the  specifications  has  been  set, 
+   so that if the required amount is > 3 litres , all the 5 stage proccess 
+   machines gets overheated & production of 4th lts onwards acid needs  to 
+   cool each machine.THIS HAS BEEN SHOWN APPROPRIATELY WHILE PRODUCTION OF 
+   4th LITRE (onwards) ACID.
+
+3. This  has  been  done deliberately to introduce and show the concept of  
+   temperature in our machine automated manufacturing-plant system.  
+
+4. Following SIGNALS have been handled in our program : 
+
+   a) SIGINT  : signal called for handling (Ctrl+C). 
+   b) SIGQUIT : signal called for handling (Ctrl+\). 
+   c) SIGALRM : signal called for production of next litre of acid. 
+   d) SIGWINCH: signal called when output terminal window size is changed. 
+   e) SIGTSTP : signal called for handling (Ctrl+Z). 
+   f) SIGUSR1 : signal called if the user enters invalid input. 
+
+		REQUIRED: 6 LITRES OF SULPHURIC ACID TO BE PRODUCED
+
+ 			Manufacture of Sulphuric Acid
+			-------------------------------
+			-------------------------------
+
+Machine 1: Burning Sulphur ...
+-->Sulphur Dioxide (SO2) prepared !!!
+----------------------------------------------------------
+----------------------------------------------------------
+
+Machine 2: Sulphur Dioxide purifying...
+-->Sulphur Dioxide purified !!!
+----------------------------------------------------------
+----------------------------------------------------------
+
+Machine 3: Oxidation of Sulphur Dioxide being carried out ...
+-->Oxidation of Sulphur Dioxide DONE & SO3 produced !!!
+----------------------------------------------------------
+----------------------------------------------------------
+
+
+
+'Ctrl+Z' pressed...Interrupt generated and ignored!!!
+
+Machine 4: Absorbing Sulphur Trioxide in chamber ...
+-->SO3 absorbed in H2SO4 & Oleum produced !!!
+----------------------------------------------------------
+----------------------------------------------------------
+
+Machine 5: Diluting Oleum...to produce acid ... 
+
+
+			|                         |
+			|                         |
+			|                         |
+			| 1 lt(s). acid produced  |
+			|_________________________|
+
+
+
+
+'Ctrl+C' pressed...Interrupt generated and ignored!!!
+
+ALARM !!! Proceeding for generation of next litre of Acid . . .
+
+
+Machine 1: Burning Sulphur ...
+-->Sulphur Dioxide (SO2) prepared !!!
+----------------------------------------------------------
+----------------------------------------------------------
+
+
+
+'Ctrl+Z' pressed...Interrupt generated and ignored!!!
+
+Machine 2: Sulphur Dioxide purifying...
+-->Sulphur Dioxide purified !!!
+----------------------------------------------------------
+----------------------------------------------------------
+
+
+
+'Ctrl+C' pressed...Interrupt generated and ignored!!!
+
+Machine 3: Oxidation of Sulphur Dioxide being carried out ...
+-->Oxidation of Sulphur Dioxide DONE & SO3 produced !!!
+----------------------------------------------------------
+----------------------------------------------------------
+
+Machine 4: Absorbing Sulphur Trioxide in chamber ...
+-->SO3 absorbed in H2SO4 & Oleum produced !!!
+----------------------------------------------------------
+----------------------------------------------------------
+
+
+ALERT: WINDOW SIZE CHANGED...PROGRAM CONTINUING ANYWAYS  !!!
+
+
+Machine 5: Diluting Oleum...to produce acid ... 
+
+
+			|                         |
+			|                         |
+			|                         |
+			| 2 lt(s). acid produced  |
+			|_________________________|
+
+
+ALARM !!! Proceeding for generation of next litre of Acid . . .
+
+
+Machine 1: Burning Sulphur ...
+-->Sulphur Dioxide (SO2) prepared !!!
+----------------------------------------------------------
+----------------------------------------------------------
+
+Machine 2: Sulphur Dioxide purifying...
+-->Sulphur Dioxide purified !!!
+----------------------------------------------------------
+----------------------------------------------------------
+
+Machine 3: Oxidation of Sulphur Dioxide being carried out ...
+
+ALERT: WINDOW SIZE CHANGED...PROGRAM CONTINUING ANYWAYS  !!!
+
+
+-->Oxidation of Sulphur Dioxide DONE & SO3 produced !!!
+----------------------------------------------------------
+----------------------------------------------------------
+
+Machine 4: Absorbing Sulphur Trioxide in chamber ...
+-->SO3 absorbed in H2SO4 & Oleum produced !!!
+----------------------------------------------------------
+----------------------------------------------------------
+
+Machine 5: Diluting Oleum...to produce acid ... 
+
+
+			|                         |
+			|                         |
+			|                         |
+			| 3 lt(s). acid produced  |
+			|_________________________|
+
+
+ALARM !!! Proceeding for generation of next litre of Acid . . .
+
+
+
+ Machine I over-heated...
+It needs to be cooled...
+cooling....
+.
+.
+Machine cooled by 20 degree celsius
+
+ALERT: WINDOW SIZE CHANGED...PROGRAM CONTINUING ANYWAYS  !!!
+
+
+
+Restarting Machine I...
+
+Machine 1: Burning Sulphur ...
+-->Sulphur Dioxide (SO2) prepared !!!
+----------------------------------------------------------
+----------------------------------------------------------
+
+
+ Machine II over-heated...
+It needs to be cooled...
+
+ALERT: WINDOW SIZE CHANGED...PROGRAM CONTINUING ANYWAYS  !!!
+
+
+cooling....
+.
+.
+Machine cooled by 10 degree celsius
+
+
+'Ctrl+C' pressed...Interrupt generated and ignored!!!
+
+
+Restarting Machine I...
+
+Machine 2: Sulphur Dioxide purifying...
+-->Sulphur Dioxide purified !!!
+----------------------------------------------------------
+----------------------------------------------------------
+
+
+ Machine III over-heated...
+It needs to be cooled...
+
+
+'Ctrl+Z' pressed...Interrupt generated and ignored!!!
+
+cooling....
+.
+.
+Machine cooled by 30 degree celsius
+
+Restarting Machine III...
+
+Machine 3: Oxidation of Sulphur Dioxide being carried out ...
+
+
+EXIT COMMAND RECEIVED : exiting.......
+
